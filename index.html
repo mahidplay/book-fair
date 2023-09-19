@@ -4,13 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first ...</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="light"></html>
+
 </head>
 <body>
-    <h1>My name is Mahid Hasan </h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias sit provident vel nostrum explicabo. Eaque ducimus expedita voluptas earum error.</p>
-    <div>
-        <h1> Books cooming soon</h1>
-    </div>
+    <header>
+        <!--nav bar-->
+        <div>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Item 1</a></li>
+                    <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                        <li><a>Submenu 1</a></li>
+                        <li><a>Submenu 2</a></li>
+                        </ul>
+                    </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                </div>
+                <div class="navbar-end">
+                <a class="btn">Button</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="text-6xl text-center font-bold  ">
+            <h1>All Flower cards </h1></div>
+
+            <div class="flex flex-col lg:flex-row gap-4 mt-8">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title font-bold text-3xl">Shoes Wite</h2>
+                    <p class="text-2xl">If a dog chews shoes whose shoes does he choose?</p>
+                    <h1 class="text-2xl font-bold">price: <span>50</span> $</h1>
+                    <div class="card-actions justify-end">
+                        <button  onclick="handleClick(this)" class="btn btn-primary bg-red-800 w-52 w-full ">ADD TO CART</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-4 ">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title font-bold text-3xl">Black Wite</h2>
+                    <p class="text-2xl">If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="font-bold text-4xl">price: <span>50</span> $</p>
+                    <div class="card-actions justify-end">
+                        <button onclick="handleClick(this)" class="btn btn-primary bg-red-800 w-52  w-full ">ADD TO CART</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-48 ">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="/images/prod1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                    <h2 class="card-title font-bold text-3xl">Ash Wite</h2>
+                    <p class="text-2xl">If a dog chews shoes whose shoes does he choose?</p>
+                    <p class="font-bold text-4xl">price: <span>50</span> $</p>
+                    <div class="card-actions justify-end">
+                        <button  onclick="handleClick(this)" class="btn btn-primary bg-red-800 w-52  w-full ">ADD TO CART</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="">
+                <h1 class="text-4xl font-bold ">Code: Hero</h1>
+                <div class="selected-items" id="selected-items">
+
+                </div>
+                <p class="text-2xl font-bold text-center">total: <span id="total-span">00</span></p>
+                <p class="text-2xl font-bold text-center">discount: <span>00</span></p>
+                <br>
+                <h2 class="text-4xl text-semebold "> grand Total: <span>00</span></h2>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+
+    </footer>
     
+
 </body>
-</html>
+
+<script src="test.js"></script>
+</html>                          
